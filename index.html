@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinesh Rana | Business Automation & Technology Consultant</title>
+    <title>R K Solutions | Website, Software, Tally & Digital Marketing in Gujarat</title>
     
     <!-- Meta Keywords & SEO -->
-    <meta name="description" content="Dinesh Rana - Tally Expert, Business Automation Specialist, Website Designer, Digital Marketing Consultant. Helping Businesses Grow Through Technology.">
-    <meta name="keywords" content="Dinesh Rana, Dinesh Rana Portfolio, Dinesh Rana Tally Expert, Tally Customization, TDL Developer, Website Designer, Lead Generation Expert, Digital Marketing Consultant, Business Automation Specialist">
-    <meta name="author" content="Dinesh Rana">
+    <meta name="description" content="R K Solutions provides professional Website Development, Custom Software, Tally Solutions, Digital Marketing, and Lead Generation for businesses across Gujarat.">
+    <meta name="author" content="R K Solutions">
+    <link rel="canonical" href="https://rk-solutions.co.in/">
 
-    <!-- JSON-LD Schema Markup for Google Search -->
+    <!-- Open Graph / Social Tags -->
+    <meta property="og:title" content="R K Solutions | IT & Business Solutions">
+    <meta property="og:description" content="Professional Website Development, Custom Software, Tally Solutions, and Digital Marketing for businesses across Gujarat.">
+    <meta property="og:url" content="https://rk-solutions.co.in/">
+    <meta property="og:type" content="website">
+
+    <!-- JSON-LD Schema Markup for Local Business -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Dinesh Rana",
-      "jobTitle": "Business Automation & Technology Consultant",
+      "@type": "LocalBusiness",
+      "name": "R K Solutions",
+      "url": "https://rk-solutions.co.in/",
       "telephone": "+91-9328142199",
       "email": "dineshrana24718@gmail.com",
-      "description": "Tally Expert, Tally Customization, Website Designer, and Digital Marketing Consultant.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Radhanpur",
+        "addressRegion": "Gujarat",
+        "addressCountry": "IN"
+      },
+      "description": "IT and Business Solutions agency providing Website Design, Custom Software, Tally Accounting Software, Tally Customization, Digital Marketing, and Lead Generation.",
+      "areaServed": "Gujarat",
       "knowsAbout": [
-        "Tally Prime", 
-        "TDL Development", 
-        "Website Design", 
-        "Lead Generation", 
-        "Digital Marketing", 
-        "Business Automation"
+        "Website Design & Development",
+        "Custom Software Development",
+        "Tally Accounting Software",
+        "Tally Support & Customization",
+        "Digital Marketing",
+        "Lead Generation"
       ]
     }
     </script>
 
-    <!-- Fonts: Outfit (Modern & Clean) -->
+    <!-- Fonts: Outfit & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -46,17 +59,17 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Outfit', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
                     },
                     colors: {
-                        primary: '#2563eb',   // Blue 600
-                        secondary: '#4f46e5', // Indigo 600
-                        accent: '#06b6d4',    // Cyan 500
+                        primary: '#1e3a8a',   // Navy Blue 900
+                        secondary: '#2563eb', // Blue 600
                         lightbg: '#f8fafc',
+                        darktext: '#0f172a',
                     },
                     boxShadow: {
-                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
-                        'glow': '0 0 20px rgba(37, 99, 235, 0.3)',
+                        'premium': '0 10px 40px -10px rgba(30, 58, 138, 0.1)',
                     }
                 }
             }
@@ -67,955 +80,839 @@
         html, body {
             overflow-x: hidden;
             width: 100%;
-        }
-
-        body {
             background-color: #f8fafc;
-            color: #0f172a;
+            color: #334155;
         }
 
-        /* Glassmorphism Utilities */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.7);
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Glassmorphism Navigation */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.8);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
-        }
-        
-        .glass-nav {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
         }
 
-        /* 3D Canvas Background */
-        #hero-canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        /* Typing Effect Cursor */
-        .cursor {
-            display: inline-block;
-            width: 3px;
-            background-color: #2563eb;
-            animation: blink 1s step-end infinite;
-            margin-left: 2px;
-            height: 1em;
-            vertical-align: text-bottom;
-        }
-        @keyframes blink {
-            50% { opacity: 0; }
-        }
-
-        /* Gradient Text */
-        .text-gradient {
-            background: linear-gradient(135deg, #2563eb, #4f46e5, #06b6d4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 200% auto;
-            animation: shine 5s linear infinite;
-        }
-        @keyframes shine {
-            to { background-position: 200% center; }
-        }
-
-        /* Card Hover Effects */
-        .hover-card-3d {
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-            will-change: transform;
-        }
-        .hover-card-3d:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
-            border-color: rgba(37, 99, 235, 0.2);
-        }
-
-        /* Scroll Reveal Animation Classes */
+        /* Scroll Reveal Animation */
         .reveal {
             opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+            transform: translateY(30px);
+            transition: all 0.7s cubic-bezier(0.5, 0, 0, 1);
         }
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
         }
 
-        /* Background Animated Blobs */
-        .bg-blob {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            z-index: -2;
-            opacity: 0.4;
-            animation: floatBlob 20s infinite alternate ease-in-out;
+        /* Premium Card Hover */
+        .premium-card {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
         }
-        @keyframes floatBlob {
-            0% { transform: translate(0, 0) scale(1); }
-            50% { transform: translate(50px, 50px) scale(1.1); }
-            100% { transform: translate(-50px, 100px) scale(0.9); }
+        .premium-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(30, 58, 138, 0.1);
+            border-color: #bfdbfe;
         }
 
-        /* Hide Scrollbar for Slider */
-        .hide-scrollbar::-webkit-scrollbar {
-            display: none;
+        /* CSS Floating Animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
         }
-        .hide-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
         }
 
-        /* Resume Template Styles specifically for PDF generation */
-        #resume-template-wrapper {
-            position: fixed; /* Fix: Changed from absolute to fixed so it doesn't take page scroll offset */
-            top: 0; /* Fix: Starts exactly at the top */
-            left: -9999px; /* Hide from screen horizontally */
-            width: 800px;
-            background: white;
-            z-index: -100;
+        /* Service Strip Marquee */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
         }
-        .pdf-resume {
-            font-family: Arial, sans-serif;
-            color: #333;
-            padding: 30px; /* Adjusted padding to look better */
-            background: #fff;
-            width: 100%;
-            box-sizing: border-box;
+        .marquee-content {
+            display: inline-flex;
+            animation: marquee 25s linear infinite;
         }
-        .pdf-header {
-            border-bottom: 2px solid #2563eb;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
-        .pdf-title {
-            font-size: 32px;
-            color: #0f172a;
-            font-weight: bold;
-            margin: 0 0 5px 0;
-        }
-        .pdf-subtitle {
-            font-size: 18px;
-            color: #2563eb;
-            margin: 0 0 10px 0;
-        }
-        .pdf-contact {
-            font-size: 12px;
-            color: #64748b;
-        }
-        .pdf-section-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #0f172a;
-            text-transform: uppercase;
-            border-bottom: 1px solid #cbd5e1;
-            padding-bottom: 5px;
-            margin-top: 20px;
-            margin-bottom: 15px;
-        }
-        .pdf-text {
-            font-size: 13px;
-            line-height: 1.6;
-            color: #475569;
-        }
-        .pdf-skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            font-size: 13px;
-        }
-        .pdf-project {
-            margin-bottom: 15px;
-        }
-        .pdf-project h4 {
-            margin: 0 0 5px 0;
-            font-size: 15px;
-            color: #1e293b;
-        }
-        .pdf-project span {
-            font-size: 11px;
-            color: #2563eb;
-            font-weight: bold;
+
+        /* FAQ Accordion Transition */
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
         }
     </style>
-
-    <!-- Three.js Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    
-    <!-- HTML to PDF Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
-<body class="antialiased relative">
-
-    <!-- Background Blobs -->
-    <div class="bg-blob bg-blue-300 w-96 h-96 top-0 left-[-100px]"></div>
-    <div class="bg-blob bg-indigo-300 w-[500px] h-[500px] top-[40%] right-[-150px]"></div>
-    <div class="bg-blob bg-cyan-200 w-[400px] h-[400px] bottom-0 left-[20%]"></div>
+<body class="antialiased">
 
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                        DR
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="w-10 h-10 rounded bg-secondary flex items-center justify-center text-white font-bold text-xl shadow-md">
+                        RK
                     </div>
-                    <span class="font-bold text-2xl text-slate-800 tracking-tight">Dinesh<span class="text-primary">.</span></span>
+                    <span class="font-bold text-2xl text-primary font-heading tracking-tight">R K Solutions</span>
                 </div>
                 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#services" class="text-slate-600 hover:text-primary font-medium transition-colors">Services</a>
-                    <a href="#expertise" class="text-slate-600 hover:text-primary font-medium transition-colors">Expertise</a>
-                    <a href="#portfolio" class="text-slate-600 hover:text-primary font-medium transition-colors">Portfolio</a>
-                    <a href="#about" class="text-slate-600 hover:text-primary font-medium transition-colors">About</a>
-                    <a href="#contact" class="px-6 py-2.5 rounded-full bg-slate-900 text-white font-medium hover:bg-primary transition-all shadow-md hover:shadow-glow transform hover:-translate-y-0.5">Let's Talk</a>
+                <div class="hidden lg:flex space-x-8 items-center">
+                    <a href="#" class="text-slate-600 hover:text-secondary font-medium transition-colors text-sm">Home</a>
+                    <a href="#services" class="text-slate-600 hover:text-secondary font-medium transition-colors text-sm">Services</a>
+                    <a href="#solutions" class="text-slate-600 hover:text-secondary font-medium transition-colors text-sm">Solutions</a>
+                    <a href="#locations" class="text-slate-600 hover:text-secondary font-medium transition-colors text-sm">Locations</a>
+                    <a href="#portfolio" class="text-slate-600 hover:text-secondary font-medium transition-colors text-sm">Portfolio</a>
+                    <a href="#about" class="text-slate-600 hover:text-secondary font-medium transition-colors text-sm">About</a>
+                    <a href="#faq" class="text-slate-600 hover:text-secondary font-medium transition-colors text-sm">FAQ</a>
+                    <a href="#contact" class="px-6 py-2.5 rounded bg-primary text-white font-medium hover:bg-secondary transition-all shadow-md text-sm">GET FREE QUOTE</a>
                 </div>
 
-                <!-- Mobile Menu Button (Fixed & Made Highly Visible) -->
-                <div class="md:hidden flex items-center ml-auto">
-                    <button id="mobile-menu-btn" class="text-slate-800 bg-slate-100 border border-slate-200 hover:bg-primary hover:text-white hover:border-primary focus:outline-none p-2.5 rounded-xl transition-all shadow-sm z-50 flex items-center justify-center">
-                        <i class="fas fa-bars text-xl w-6 h-6 flex items-center justify-center transition-all duration-300"></i>
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-primary p-2 focus:outline-none flex items-center justify-center" aria-label="Menu">
+                        <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
         </div>
+        
         <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white absolute w-full left-0 top-20 border-t border-slate-200 shadow-[0_20px_40px_rgba(0,0,0,0.15)] origin-top z-50">
-            <div class="px-5 pt-4 pb-8 space-y-3 flex flex-col">
-                <a href="#services" class="block px-4 py-3.5 rounded-xl text-base font-semibold text-slate-700 bg-slate-50 border border-slate-100 hover:bg-primary hover:text-white hover:border-primary transition-all text-center shadow-sm">Services</a>
-                <a href="#expertise" class="block px-4 py-3.5 rounded-xl text-base font-semibold text-slate-700 bg-slate-50 border border-slate-100 hover:bg-primary hover:text-white hover:border-primary transition-all text-center shadow-sm">Expertise</a>
-                <a href="#portfolio" class="block px-4 py-3.5 rounded-xl text-base font-semibold text-slate-700 bg-slate-50 border border-slate-100 hover:bg-primary hover:text-white hover:border-primary transition-all text-center shadow-sm">Portfolio</a>
-                <a href="#about" class="block px-4 py-3.5 rounded-xl text-base font-semibold text-slate-700 bg-slate-50 border border-slate-100 hover:bg-primary hover:text-white hover:border-primary transition-all text-center shadow-sm">About</a>
-                <a href="#contact" class="block px-4 py-4 mt-4 text-center rounded-xl bg-primary text-white font-bold text-lg shadow-lg hover:bg-secondary hover:-translate-y-1 transition-all">Let's Talk</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white absolute w-full left-0 top-20 border-t border-slate-100 shadow-xl z-50">
+            <div class="px-6 py-6 flex flex-col gap-4">
+                <a href="#" class="mobile-link block text-base font-semibold text-slate-700 hover:text-secondary">Home</a>
+                <a href="#services" class="mobile-link block text-base font-semibold text-slate-700 hover:text-secondary">Services</a>
+                <a href="#solutions" class="mobile-link block text-base font-semibold text-slate-700 hover:text-secondary">Solutions</a>
+                <a href="#locations" class="mobile-link block text-base font-semibold text-slate-700 hover:text-secondary">Locations</a>
+                <a href="#portfolio" class="mobile-link block text-base font-semibold text-slate-700 hover:text-secondary">Portfolio</a>
+                <a href="#about" class="mobile-link block text-base font-semibold text-slate-700 hover:text-secondary">About</a>
+                <a href="#faq" class="mobile-link block text-base font-semibold text-slate-700 hover:text-secondary">FAQ</a>
+                <a href="#contact" class="mobile-link block text-center px-4 py-3 mt-2 rounded bg-primary text-white font-bold text-sm shadow-md">GET FREE QUOTE</a>
             </div>
         </div>
     </nav>
 
-    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-        <!-- 3D Canvas Background -->
-        <canvas id="hero-canvas"></canvas>
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 bg-white overflow-hidden">
+        <!-- Subtle background pattern -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiNlMmU4ZjAiLz48L3N2Zz4=')] opacity-60"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Hero Text -->
+                <div class="reveal text-center lg:text-left">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-secondary font-semibold text-xs tracking-wider uppercase mb-6 border border-blue-100">
+                        Trusted IT Partner in Gujarat
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-darktext leading-tight mb-6 font-heading">
+                        Website, Software & Tally Solutions for Businesses Across Gujarat
+                    </h1>
+                    <p class="text-lg text-secondary mb-4 font-semibold">
+                        Website Development • Custom Software • Tally Solutions • Digital Marketing • Lead Generation
+                    </p>
+                    <p class="text-base text-slate-600 mb-8 max-w-lg mx-auto lg:mx-0">
+                        We empower businesses with modern websites, custom business software, complete Tally accounting solutions, and data-driven digital growth strategies tailored to your exact requirements.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#contact" class="px-8 py-3.5 rounded bg-primary text-white font-semibold shadow-premium hover:bg-secondary transition-all text-center">
+                            Get Free Quote
+                        </a>
+                        <a href="https://wa.me/919328142199?text=Hello%20R%20K%20Solutions,%20I%20have%20a%20business%20inquiry." target="_blank" class="px-8 py-3.5 rounded bg-white text-slate-800 border border-slate-300 font-semibold shadow-sm hover:border-green-500 hover:text-green-600 transition-all flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-xl text-green-500"></i> WhatsApp Us
+                        </a>
+                    </div>
+                </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
-            
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-primary/20 text-primary font-semibold text-sm mb-6 reveal shadow-sm">
-                <span class="relative flex h-3 w-3">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
-                </span>
-                Available for New Projects
-            </div>
-
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4 reveal" style="transition-delay: 0.1s;">
-                Hi, I'm <span class="text-gradient">Dinesh Rana</span>
-            </h1>
-            
-            <div class="text-2xl md:text-4xl font-semibold text-slate-700 mb-6 h-12 reveal" style="transition-delay: 0.2s;">
-                <span id="typed-text"></span><span class="cursor"></span>
-            </div>
-
-            <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-slate-600 mb-10 reveal" style="transition-delay: 0.3s;">
-                "Helping Businesses Grow Through Technology, Automation & Digital Solutions."
-            </p>
-
-            <div class="flex flex-col sm:flex-row gap-4 justify-center reveal" style="transition-delay: 0.4s;">
-                <a href="#portfolio" class="px-8 py-4 rounded-full bg-primary text-white font-semibold text-lg shadow-lg shadow-primary/30 hover:bg-secondary transition-all hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-2">
-                    <i class="fas fa-briefcase"></i> View Portfolio
-                </a>
-                <a href="#contact" class="px-8 py-4 rounded-full glass-card text-slate-800 font-semibold text-lg hover:bg-white/90 transition-all hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2 border-slate-300">
-                    <i class="fas fa-envelope text-primary"></i> Contact Me
-                </a>
-                <button onclick="openCvModal()" class="px-8 py-4 rounded-full border-2 border-slate-300 text-slate-700 font-semibold text-lg hover:border-primary hover:text-primary transition-all hover:-translate-y-1 flex items-center justify-center gap-2 bg-white/50 backdrop-blur-sm cursor-pointer">
-                    <i class="fas fa-download"></i> Download CV
-                </button>
-            </div>
-            
-            <!-- Scroll Indicator -->
-            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <a href="#services" class="text-slate-400 hover:text-primary">
-                    <i class="fas fa-chevron-down text-2xl"></i>
-                </a>
+                <!-- Hero Visual (Clean CSS abstract) -->
+                <div class="relative reveal h-[450px] hidden lg:block">
+                    <!-- Website Panel -->
+                    <div class="absolute top-10 right-4 w-72 h-56 bg-white rounded-lg shadow-xl border border-slate-100 p-4 animate-float z-20">
+                        <div class="w-full flex items-center gap-2 border-b border-slate-100 pb-2 mb-3">
+                            <div class="flex gap-1.5">
+                                <div class="w-2.5 h-2.5 rounded-full bg-red-400"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-yellow-400"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
+                            </div>
+                            <div class="w-32 h-2 bg-slate-100 rounded ml-2"></div>
+                        </div>
+                        <div class="w-1/3 h-4 bg-slate-200 rounded mb-4"></div>
+                        <div class="w-full h-20 bg-blue-50 rounded mb-2"></div>
+                        <div class="flex gap-2">
+                            <div class="w-1/2 h-10 bg-slate-50 rounded"></div>
+                            <div class="w-1/2 h-10 bg-slate-50 rounded"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Software Dashboard Panel -->
+                    <div class="absolute bottom-10 left-4 w-64 h-64 bg-primary rounded-lg shadow-2xl p-5 z-30" style="animation: float 6s ease-in-out 2s infinite;">
+                        <div class="w-1/2 h-4 bg-blue-800 rounded mb-6"></div>
+                        <div class="flex items-end gap-3 h-24 mb-6">
+                            <div class="w-1/4 h-1/2 bg-blue-500 rounded-t"></div>
+                            <div class="w-1/4 h-3/4 bg-blue-400 rounded-t"></div>
+                            <div class="w-1/4 h-full bg-secondary rounded-t"></div>
+                            <div class="w-1/4 h-2/3 bg-blue-300 rounded-t"></div>
+                        </div>
+                        <div class="w-full h-12 border border-blue-800 rounded flex items-center px-3 gap-3">
+                            <div class="w-6 h-6 rounded bg-blue-800"></div>
+                            <div class="w-24 h-2 bg-blue-800 rounded"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Accounting/Tally Panel -->
+                    <div class="absolute top-48 left-1/2 transform -translate-x-1/2 w-64 bg-white rounded-lg shadow-lg border border-slate-100 p-5 z-10 opacity-90" style="animation: float 6s ease-in-out 1s infinite;">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="w-8 h-8 rounded bg-green-100 flex items-center justify-center text-green-600"><i class="fas fa-file-invoice"></i></div>
+                            <div class="w-16 h-3 bg-slate-200 rounded"></div>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <div class="w-full h-2 bg-slate-100 rounded"></div>
+                            <div class="w-full h-2 bg-slate-100 rounded"></div>
+                            <div class="w-3/4 h-2 bg-slate-100 rounded"></div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-24 relative">
+    <div class="bg-primary py-3 border-y border-slate-800 marquee-container">
+        <div class="marquee-content text-white font-medium text-sm flex gap-12 px-6">
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-300"></i> Website Development</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-300"></i> Custom Software</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-300"></i> Tally Solutions</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-300"></i> Digital Marketing</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-300"></i> Lead Generation</span>
+            <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-red-400"></i> Gujarat-wide Service</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-300"></i> Website Development</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-300"></i> Custom Software</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-300"></i> Tally Solutions</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-300"></i> Digital Marketing</span>
+            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-300"></i> Lead Generation</span>
+            <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-red-400"></i> Gujarat-wide Service</span>
+        </div>
+    </div>
+
+    <section id="services" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
-                <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">What I Offer</h2>
-                <h3 class="text-4xl font-extrabold text-slate-900">Premium <span class="text-gradient">Services</span></h3>
-            </div>
-
-            <div class="flex flex-wrap justify-center gap-4 reveal">
-                <div class="px-6 py-3 bg-white rounded-full shadow-md border border-slate-100 hover:border-primary hover:text-primary transition font-semibold text-slate-700 hover:-translate-y-1 cursor-pointer"><i class="fas fa-cogs mr-2 text-primary"></i> Tally Prime Solutions</div>
-                <div class="px-6 py-3 bg-white rounded-full shadow-md border border-slate-100 hover:border-primary hover:text-primary transition font-semibold text-slate-700 hover:-translate-y-1 cursor-pointer"><i class="fas fa-code mr-2 text-secondary"></i> TDL Development</div>
-                <div class="px-6 py-3 bg-white rounded-full shadow-md border border-slate-100 hover:border-primary hover:text-primary transition font-semibold text-slate-700 hover:-translate-y-1 cursor-pointer"><i class="fas fa-globe mr-2 text-accent"></i> Website Development</div>
-                <div class="px-6 py-3 bg-white rounded-full shadow-md border border-slate-100 hover:border-primary hover:text-primary transition font-semibold text-slate-700 hover:-translate-y-1 cursor-pointer"><i class="fas fa-users mr-2 text-orange-500"></i> Lead Generation Services</div>
-                <div class="px-6 py-3 bg-white rounded-full shadow-md border border-slate-100 hover:border-primary hover:text-primary transition font-semibold text-slate-700 hover:-translate-y-1 cursor-pointer"><i class="fas fa-chart-line mr-2 text-purple-500"></i> Digital Marketing</div>
-                <div class="px-6 py-3 bg-white rounded-full shadow-md border border-slate-100 hover:border-primary hover:text-primary transition font-semibold text-slate-700 hover:-translate-y-1 cursor-pointer"><i class="fas fa-robot mr-2 text-blue-600"></i> Business Automation</div>
-                <div class="px-6 py-3 bg-white rounded-full shadow-md border border-slate-100 hover:border-primary hover:text-primary transition font-semibold text-slate-700 hover:-translate-y-1 cursor-pointer"><i class="fas fa-exchange-alt mr-2 text-green-500"></i> Data Migration</div>
-                <div class="px-6 py-3 bg-white rounded-full shadow-md border border-slate-100 hover:border-primary hover:text-primary transition font-semibold text-slate-700 hover:-translate-y-1 cursor-pointer"><i class="fas fa-search mr-2 text-indigo-500"></i> SEO Services</div>
-                <div class="px-6 py-3 bg-white rounded-full shadow-md border border-slate-100 hover:border-primary hover:text-primary transition font-semibold text-slate-700 hover:-translate-y-1 cursor-pointer"><i class="fas fa-address-book mr-2 text-cyan-600"></i> CRM Solutions</div>
-                <div class="px-6 py-3 bg-white rounded-full shadow-md border border-slate-100 hover:border-primary hover:text-primary transition font-semibold text-slate-700 hover:-translate-y-1 cursor-pointer"><i class="fas fa-handshake mr-2 text-slate-800"></i> Business Consulting</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="expertise" class="py-24 bg-slate-50/50 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-                <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">My Superpowers</h2>
-                <h3 class="text-4xl font-extrabold text-slate-900 mb-4">Core <span class="text-gradient">Expertise</span></h3>
-                <p class="text-slate-600 text-lg">A comprehensive skill set designed to scale your business operations, streamline finances, and boost digital presence.</p>
+                <h2 class="text-secondary font-bold tracking-wider uppercase text-xs mb-2">Our Core Offerings</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-darktext font-heading">Professional IT & Business Services</h3>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Cards content is same as before -->
-                <div class="glass-card rounded-3xl p-8 hover-card-3d reveal border-t border-l border-white/80">
-                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6 shadow-sm">
-                        <i class="fas fa-file-invoice-dollar"></i>
+                <!-- Service 1 -->
+                <div class="premium-card bg-white rounded-xl p-8 reveal">
+                    <div class="w-14 h-14 bg-blue-50 rounded flex items-center justify-center text-secondary text-2xl mb-6">
+                        <i class="fas fa-globe"></i>
                     </div>
-                    <h4 class="text-2xl font-bold text-slate-800 mb-4">Tally Accounting</h4>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-primary mt-1"></i> Accounting Management</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-primary mt-1"></i> GST Handling & Returns</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-primary mt-1"></i> Inventory Tracking</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-primary mt-1"></i> Financial & MIS Reports</li>
-                    </ul>
+                    <h4 class="text-xl font-bold text-darktext mb-3">Website Design & Development</h4>
+                    <p class="text-slate-600 text-sm mb-6 line-clamp-3">Professional business, corporate, and e-commerce websites designed for speed, responsiveness, and maximum user engagement.</p>
+                    <a href="#contact" class="text-secondary font-semibold text-sm hover:text-primary transition flex items-center gap-1">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
                 </div>
 
-                <div class="glass-card rounded-3xl p-8 hover-card-3d reveal border-t border-l border-white/80" style="transition-delay: 0.1s;">
-                    <div class="w-14 h-14 bg-indigo-100 rounded-2xl flex items-center justify-center text-indigo-600 text-2xl mb-6 shadow-sm">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold text-slate-800 mb-4">Tally Customization</h4>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-secondary mt-1"></i> Advanced TDL Development</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-secondary mt-1"></i> Invoice Customizations</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-secondary mt-1"></i> Custom Business Reports</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-secondary mt-1"></i> Workflow Automation</li>
-                    </ul>
-                </div>
-
-                <div class="glass-card rounded-3xl p-8 hover-card-3d reveal border-t border-l border-white/80" style="transition-delay: 0.2s;">
-                    <div class="w-14 h-14 bg-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-2xl mb-6 shadow-sm">
+                <!-- Service 2 -->
+                <div class="premium-card bg-white rounded-xl p-8 reveal" style="transition-delay: 0.1s;">
+                    <div class="w-14 h-14 bg-blue-50 rounded flex items-center justify-center text-secondary text-2xl mb-6">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h4 class="text-2xl font-bold text-slate-800 mb-4">Website Design</h4>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent mt-1"></i> Corporate Business Sites</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent mt-1"></i> High-Converting Landing Pages</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent mt-1"></i> SEO-Friendly Architecture</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent mt-1"></i> Fully Responsive Design</li>
-                    </ul>
+                    <h4 class="text-xl font-bold text-darktext mb-3">Custom Software Development</h4>
+                    <p class="text-slate-600 text-sm mb-6 line-clamp-3">Bespoke software solutions and CRM systems tailored to your unique business workflows to improve efficiency and automation.</p>
+                    <a href="#contact" class="text-secondary font-semibold text-sm hover:text-primary transition flex items-center gap-1">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
                 </div>
 
-                <div class="glass-card rounded-3xl p-8 hover-card-3d reveal border-t border-l border-white/80">
-                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 text-2xl mb-6 shadow-sm">
-                        <i class="fas fa-magnet"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold text-slate-800 mb-4">Lead Generation</h4>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-orange-500 mt-1"></i> FB & Google Lead Campaigns</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-orange-500 mt-1"></i> WhatsApp Marketing Setup</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-orange-500 mt-1"></i> Sales Funnel Creation</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-orange-500 mt-1"></i> CRM Integration</li>
-                    </ul>
-                </div>
-
-                <div class="glass-card rounded-3xl p-8 hover-card-3d reveal border-t border-l border-white/80" style="transition-delay: 0.1s;">
-                    <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 text-2xl mb-6 shadow-sm">
+                <!-- Service 3 -->
+                <div class="premium-card bg-white rounded-xl p-8 reveal" style="transition-delay: 0.2s;">
+                    <div class="w-14 h-14 bg-blue-50 rounded flex items-center justify-center text-secondary text-2xl mb-6">
                         <i class="fas fa-bullhorn"></i>
                     </div>
-                    <h4 class="text-2xl font-bold text-slate-800 mb-4">Digital Marketing</h4>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> SEO & Organic Growth</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> Social Media Management</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> Paid Advertising (Ads)</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> Content Strategy</li>
-                    </ul>
+                    <h4 class="text-xl font-bold text-darktext mb-3">Digital Marketing</h4>
+                    <p class="text-slate-600 text-sm mb-6 line-clamp-3">Data-driven marketing strategies including SEO, social media management, and paid advertising to boost your online visibility.</p>
+                    <a href="#contact" class="text-secondary font-semibold text-sm hover:text-primary transition flex items-center gap-1">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
                 </div>
 
-                <div class="glass-card rounded-3xl p-8 hover-card-3d reveal border-t border-l border-white/80" style="transition-delay: 0.2s;">
-                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-2xl mb-6 shadow-sm">
-                        <i class="fas fa-database"></i>
+                <!-- Service 4 -->
+                <div class="premium-card bg-white rounded-xl p-8 reveal">
+                    <div class="w-14 h-14 bg-blue-50 rounded flex items-center justify-center text-secondary text-2xl mb-6">
+                        <i class="fas fa-file-invoice-dollar"></i>
                     </div>
-                    <h4 class="text-2xl font-bold text-slate-800 mb-4">Data & Sales Ops</h4>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-green-500 mt-1"></i> Excel to Tally Import</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-green-500 mt-1"></i> Bulk Data Migration</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-green-500 mt-1"></i> Client Handling & Demos</li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-green-500 mt-1"></i> Lead Conversion Tactics</li>
-                    </ul>
+                    <h4 class="text-xl font-bold text-darktext mb-3">Tally Accounting Software</h4>
+                    <p class="text-slate-600 text-sm mb-6 line-clamp-3">End-to-end Tally Prime implementation, licensing, accounting setup, GST handling, and inventory management solutions.</p>
+                    <a href="#contact" class="text-secondary font-semibold text-sm hover:text-primary transition flex items-center gap-1">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="premium-card bg-white rounded-xl p-8 reveal" style="transition-delay: 0.1s;">
+                    <div class="w-14 h-14 bg-blue-50 rounded flex items-center justify-center text-secondary text-2xl mb-6">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-darktext mb-3">Tally Support & Customization</h4>
+                    <p class="text-slate-600 text-sm mb-6 line-clamp-3">Advanced TDL (Tally Definition Language) scripting to customize invoices, automate reporting, and modify workflows to fit your needs.</p>
+                    <a href="#contact" class="text-secondary font-semibold text-sm hover:text-primary transition flex items-center gap-1">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="premium-card bg-white rounded-xl p-8 reveal" style="transition-delay: 0.2s;">
+                    <div class="w-14 h-14 bg-blue-50 rounded flex items-center justify-center text-secondary text-2xl mb-6">
+                        <i class="fas fa-magnet"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-darktext mb-3">Lead Generation</h4>
+                    <p class="text-slate-600 text-sm mb-6 line-clamp-3">Strategic campaigns utilizing Google Ads, Facebook Ads, and sales funnels to generate high-quality B2B and B2C inbound leads.</p>
+                    <a href="#contact" class="text-secondary font-semibold text-sm hover:text-primary transition flex items-center gap-1">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="py-24 bg-slate-900 text-white relative overflow-hidden">
-        <div class="absolute w-96 h-96 bg-primary rounded-full blur-[100px] opacity-20 top-0 left-0"></div>
-        <div class="absolute w-96 h-96 bg-accent rounded-full blur-[100px] opacity-20 bottom-0 right-0"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="flex justify-between items-end mb-12 reveal">
-                <div>
-                    <h2 class="text-accent font-bold tracking-wider uppercase text-sm mb-2">My Work</h2>
-                    <h3 class="text-4xl font-extrabold text-white">Project <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">Showcase</span></h3>
-                </div>
-                <div class="hidden md:flex gap-4">
-                    <button id="slideLeft" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition"><i class="fas fa-arrow-left"></i></button>
-                    <button id="slideRight" class="w-12 h-12 rounded-full bg-primary flex items-center justify-center hover:bg-secondary transition shadow-lg shadow-primary/30"><i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-
-            <!-- Slider Container -->
-            <div id="slider" class="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-8 reveal" style="scroll-behavior: smooth;">
-                
-                <!-- Project 1: Tally Ki Pathshala -->
-                <div class="min-w-[300px] md:min-w-[400px] snap-center bg-slate-800/50 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover-card-3d group flex flex-col">
-                    <div class="h-48 bg-slate-700 rounded-2xl mb-6 relative overflow-hidden flex items-center justify-center group-hover:shadow-lg transition-all">
-                        <!-- Custom CSS Tally Logo -->
-                        <div class="w-full h-full bg-[#f8fafc] flex flex-col items-center justify-center transform group-hover:scale-110 transition duration-700">
-                            <div class="text-5xl font-black tracking-tighter text-[#1e3a8a] drop-shadow-sm flex items-baseline">
-                                Tally<span class="text-yellow-500 font-sans ml-1 text-4xl">.</span>
-                            </div>
-                            <span class="text-[#1e3a8a] text-[10px] font-semibold tracking-widest mt-1 opacity-80">POWER OF SIMPLICITY</span>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80 pointer-events-none"></div>
-                        <span class="absolute bottom-4 left-4 bg-cyan-500/20 text-cyan-400 text-xs px-3 py-1 rounded-full border border-cyan-500/30 backdrop-blur-sm z-10">Website Design</span>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2">Tally Ki Pathshala</h4>
-                    <p class="text-slate-400 text-sm mb-4 flex-grow">Designed and developed a dedicated platform for learning Tally. Visit live project: <a href="http://tallykipathshala.com/" target="_blank" class="text-accent hover:text-white transition underline">tallykipathshala.com</a></p>
-                    <div class="flex flex-wrap gap-2 text-xs text-slate-300 mt-auto">
-                        <span class="px-2 py-1 bg-white/5 rounded">Web Dev</span>
-                        <span class="px-2 py-1 bg-white/5 rounded">Education</span>
-                        <span class="px-2 py-1 bg-white/5 rounded">SEO</span>
-                    </div>
-                </div>
-
-                <!-- Project 2: Nidhish Marine -->
-                <div class="min-w-[300px] md:min-w-[400px] snap-center bg-slate-800/50 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover-card-3d group flex flex-col">
-                    <div class="h-48 bg-slate-700 rounded-2xl mb-6 relative overflow-hidden flex items-center justify-center group-hover:shadow-lg transition-all">
-                        <!-- Marine/Shipping Image -->
-                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Nidhish Marine Shipping" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80 pointer-events-none"></div>
-                        <span class="absolute bottom-4 left-4 bg-primary/20 text-blue-400 text-xs px-3 py-1 rounded-full border border-primary/30 backdrop-blur-sm z-10">Corporate Website</span>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2">Nidhish Marine</h4>
-                    <p class="text-slate-400 text-sm mb-4 flex-grow">Developed a professional and responsive corporate website for marine services. Visit live project: <a href="http://nidhishmarine.com/" target="_blank" class="text-accent hover:text-white transition underline">nidhishmarine.com</a></p>
-                    <div class="flex flex-wrap gap-2 text-xs text-slate-300 mt-auto">
-                        <span class="px-2 py-1 bg-white/5 rounded">Web Design</span>
-                        <span class="px-2 py-1 bg-white/5 rounded">Corporate</span>
-                        <span class="px-2 py-1 bg-white/5 rounded">Responsive</span>
-                    </div>
-                </div>
-
-                <!-- Project 3: TDL Customization -->
-                <div class="min-w-[300px] md:min-w-[400px] snap-center bg-slate-800/50 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover-card-3d group flex flex-col">
-                    <div class="h-48 bg-slate-700 rounded-2xl mb-6 relative overflow-hidden flex items-center justify-center group-hover:shadow-lg transition-all">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="TDL Code" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 opacity-60 mix-blend-overlay">
-                        <i class="fas fa-code text-5xl text-indigo-400 absolute z-10 drop-shadow-lg"></i>
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-80"></div>
-                        <span class="absolute bottom-4 left-4 bg-indigo-500/20 text-indigo-400 text-xs px-3 py-1 rounded-full border border-indigo-500/30 backdrop-blur-sm z-10">TDL Solution</span>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2">TDL Customization</h4>
-                    <p class="text-slate-400 text-sm mb-4 flex-grow">Developed highly tailored Tally Definition Language (TDL) scripts to automate complex workflows, generate custom reports, and modify invoices as per client needs.</p>
-                    <div class="flex flex-wrap gap-2 text-xs text-slate-300 mt-auto">
-                        <span class="px-2 py-1 bg-white/5 rounded">TDL</span>
-                        <span class="px-2 py-1 bg-white/5 rounded">Automation</span>
-                        <span class="px-2 py-1 bg-white/5 rounded">Tally Prime</span>
-                    </div>
-                </div>
-
-                <!-- Project 4: End-to-End Tally Accounting -->
-                <div class="min-w-[300px] md:min-w-[400px] snap-center bg-slate-800/50 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover-card-3d group flex flex-col">
-                    <div class="h-48 bg-slate-700 rounded-2xl mb-6 relative overflow-hidden flex items-center justify-center group-hover:shadow-lg transition-all">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Accounting" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 opacity-60 mix-blend-overlay">
-                        <i class="fas fa-file-invoice-dollar text-5xl text-green-500 absolute z-10 drop-shadow-lg"></i>
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-80"></div>
-                        <span class="absolute bottom-4 left-4 bg-green-500/20 text-green-400 text-xs px-3 py-1 rounded-full border border-green-500/30 backdrop-blur-sm z-10">Accounting</span>
-                    </div>
-                    <h4 class="text-xl font-bold mb-2">End-to-End Tally Management</h4>
-                    <p class="text-slate-400 text-sm mb-4 flex-grow">Successfully managed comprehensive accounting structures, seamless GST filings, inventory tracking, and MIS reporting for multiple businesses.</p>
-                    <div class="flex flex-wrap gap-2 text-xs text-slate-300 mt-auto">
-                        <span class="px-2 py-1 bg-white/5 rounded">Accounting</span>
-                        <span class="px-2 py-1 bg-white/5 rounded">GST</span>
-                        <span class="px-2 py-1 bg-white/5 rounded">MIS Reports</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-24 relative z-10">
+    <section id="solutions" class="py-20 bg-white border-y border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <!-- Image / Abstract Visual -->
-                <div class="relative reveal order-2 lg:order-1">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-primary to-accent rounded-3xl transform rotate-6 opacity-20 blur-xl"></div>
-                    <div class="relative glass-card p-2 rounded-3xl">
-                        <!-- Placeholder for Photo -->
-                        <div class="w-full h-[500px] rounded-2xl overflow-hidden relative bg-slate-100 flex items-center justify-center">
-                            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-100"></div>
-                            <i class="fas fa-user-tie text-9xl text-slate-300 absolute opacity-50"></i>
-                            <div class="z-10 text-center p-8">
-                                <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg mx-auto mb-6">
-                                    <span class="text-4xl font-bold text-gradient">DR</span>
-                                </div>
-                                <h3 class="text-2xl font-bold text-slate-800">Dinesh Rana</h3>
-                                <p class="text-primary font-medium">Business Tech Consultant</p>
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-secondary font-bold tracking-wider uppercase text-xs mb-2">Identify Your Requirement</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-darktext font-heading">Solutions Built Around Your Business Needs</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
+                <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition flex items-start gap-5">
+                    <div class="w-12 h-12 bg-primary text-white rounded flex items-center justify-center text-xl shrink-0">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-darktext mb-2">Need a Website?</h4>
+                        <p class="text-slate-600 text-sm">Professional business, corporate and e-commerce websites built to establish a strong digital identity.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition flex items-start gap-5">
+                    <div class="w-12 h-12 bg-primary text-white rounded flex items-center justify-center text-xl shrink-0">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-darktext mb-2">Need Business Software?</h4>
+                        <p class="text-slate-600 text-sm">Custom software designed strictly around your unique business workflows to automate manual processes.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition flex items-start gap-5">
+                    <div class="w-12 h-12 bg-primary text-white rounded flex items-center justify-center text-xl shrink-0">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-darktext mb-2">Need Tally Services?</h4>
+                        <p class="text-slate-600 text-sm">Tally software licensing, technical support, customized TDL development, and comprehensive accounting solutions.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition flex items-start gap-5">
+                    <div class="w-12 h-12 bg-primary text-white rounded flex items-center justify-center text-xl shrink-0">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-darktext mb-2">Need More Leads?</h4>
+                        <p class="text-slate-600 text-sm">Combine a high-converting website with our targeted digital marketing and lead generation solutions to grow sales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Why Choose Us -->
+                <div class="reveal">
+                    <h2 class="text-secondary font-bold tracking-wider uppercase text-xs mb-2">The Advantage</h2>
+                    <h3 class="text-3xl font-extrabold text-darktext font-heading mb-6">Why Businesses Choose R K Solutions</h3>
+                    
+                    <ul class="space-y-4 mt-8">
+                        <li class="flex items-start gap-4 p-4 rounded bg-white border border-slate-200 shadow-sm">
+                            <i class="fas fa-check text-secondary text-xl mt-0.5"></i>
+                            <div>
+                                <h5 class="font-bold text-darktext">Business-focused solutions</h5>
+                                <p class="text-sm text-slate-600 mt-1">Technology aligned entirely with your operational and sales goals.</p>
                             </div>
+                        </li>
+                        <li class="flex items-start gap-4 p-4 rounded bg-white border border-slate-200 shadow-sm">
+                            <i class="fas fa-check text-secondary text-xl mt-0.5"></i>
+                            <div>
+                                <h5 class="font-bold text-darktext">Expert Website & Custom Software</h5>
+                                <p class="text-sm text-slate-600 mt-1">Reliable, scalable, and secure development standards.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 p-4 rounded bg-white border border-slate-200 shadow-sm">
+                            <i class="fas fa-check text-secondary text-xl mt-0.5"></i>
+                            <div>
+                                <h5 class="font-bold text-darktext">Tally & Accounting Expertise</h5>
+                                <p class="text-sm text-slate-600 mt-1">Deep understanding of Indian business accounting and Tally TDL.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 p-4 rounded bg-white border border-slate-200 shadow-sm">
+                            <i class="fas fa-check text-secondary text-xl mt-0.5"></i>
+                            <div>
+                                <h5 class="font-bold text-darktext">Ongoing Technical Support</h5>
+                                <p class="text-sm text-slate-600 mt-1">We stand by our clients long after the initial project delivery.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- How We Work -->
+                <div class="reveal lg:pl-10">
+                    <h2 class="text-secondary font-bold tracking-wider uppercase text-xs mb-2">Our Process</h2>
+                    <h3 class="text-3xl font-extrabold text-darktext font-heading mb-8">How We Work</h3>
+                    
+                    <div class="relative border-l-2 border-slate-200 ml-3 space-y-10 pb-4">
+                        
+                        <div class="relative pl-8">
+                            <div class="absolute w-8 h-8 rounded-full bg-blue-50 border-4 border-white flex items-center justify-center -left-[17px] top-0 shadow text-secondary font-bold text-xs">01</div>
+                            <h5 class="font-bold text-darktext text-lg">Understand Your Requirement</h5>
+                            <p class="text-slate-600 text-sm mt-1">We listen to your business challenges, current workflows, and future goals through a detailed consultation.</p>
                         </div>
                         
-                        <!-- Floating Badge -->
-                        <div class="absolute -bottom-6 -right-6 glass-card p-4 rounded-2xl shadow-xl border-t border-white flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary text-2xl">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <div>
-                                <p class="text-sm text-slate-500 font-semibold">Certified</p>
-                                <p class="text-slate-800 font-bold">Tally Expert</p>
-                            </div>
+                        <div class="relative pl-8">
+                            <div class="absolute w-8 h-8 rounded-full bg-blue-50 border-4 border-white flex items-center justify-center -left-[17px] top-0 shadow text-secondary font-bold text-xs">02</div>
+                            <h5 class="font-bold text-darktext text-lg">Plan the Right Solution</h5>
+                            <p class="text-slate-600 text-sm mt-1">We propose the exact architecture, whether it's a website layout, software stack, or Tally customization map.</p>
                         </div>
+
+                        <div class="relative pl-8">
+                            <div class="absolute w-8 h-8 rounded-full bg-blue-50 border-4 border-white flex items-center justify-center -left-[17px] top-0 shadow text-secondary font-bold text-xs">03</div>
+                            <h5 class="font-bold text-darktext text-lg">Develop & Implement</h5>
+                            <p class="text-slate-600 text-sm mt-1">Our team builds, codes, and configures the solution, ensuring rigorous testing before deployment.</p>
+                        </div>
+
+                        <div class="relative pl-8">
+                            <div class="absolute w-8 h-8 rounded-full bg-primary border-4 border-white flex items-center justify-center -left-[17px] top-0 shadow text-white font-bold text-xs">04</div>
+                            <h5 class="font-bold text-darktext text-lg">Support & Improve</h5>
+                            <p class="text-slate-600 text-sm mt-1">Post-launch, we provide necessary training, maintenance, and ongoing digital marketing support.</p>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Text Content -->
-                <div class="reveal order-1 lg:order-2">
-                    <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">About Me</h2>
-                    <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
-                        Transforming Businesses Through <span class="text-gradient">Technology</span>
-                    </h3>
-                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                        I am a technology-driven business consultant with deep expertise in Tally Accounting, Tally Customization, Website Design, Digital Marketing, Lead Generation, Sales, and Business Automation.
-                    </p>
-                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
-                        My mission is to help businesses improve efficiency, generate more leads, and achieve sustainable growth by implementing the right digital solutions and automated workflows.
-                    </p>
-                    
-                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                        <li class="flex items-center gap-3 text-slate-700 font-medium">
-                            <i class="fas fa-check-circle text-accent"></i> Business Automation
-                        </li>
-                        <li class="flex items-center gap-3 text-slate-700 font-medium">
-                            <i class="fas fa-check-circle text-accent"></i> Custom Tally Solutions
-                        </li>
-                        <li class="flex items-center gap-3 text-slate-700 font-medium">
-                            <i class="fas fa-check-circle text-accent"></i> High-Converting Websites
-                        </li>
-                        <li class="flex items-center gap-3 text-slate-700 font-medium">
-                            <i class="fas fa-check-circle text-accent"></i> Data-Driven Marketing
-                        </li>
-                    </ul>
+            </div>
+        </div>
+    </section>
 
-                    <div class="flex items-center gap-6">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-slate-600">
+    <section class="py-16 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+            <h2 class="text-3xl font-bold font-heading text-white mb-8">Solutions for Different Types of Businesses</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-5 py-2 rounded bg-white/10 text-white font-medium border border-white/20">Retail Businesses</span>
+                <span class="px-5 py-2 rounded bg-white/10 text-white font-medium border border-white/20">Manufacturers</span>
+                <span class="px-5 py-2 rounded bg-white/10 text-white font-medium border border-white/20">Traders</span>
+                <span class="px-5 py-2 rounded bg-white/10 text-white font-medium border border-white/20">Service Businesses</span>
+                <span class="px-5 py-2 rounded bg-white/10 text-white font-medium border border-white/20">Schools & Institutes</span>
+                <span class="px-5 py-2 rounded bg-white/10 text-white font-medium border border-white/20">Professional Services</span>
+                <span class="px-5 py-2 rounded bg-white/10 text-white font-medium border border-white/20">E-commerce Businesses</span>
+                <span class="px-5 py-2 rounded bg-white/10 text-white font-medium border border-white/20">Startups</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-secondary font-bold tracking-wider uppercase text-xs mb-2">Our Work</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-darktext font-heading">Featured Projects</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                
+                <!-- Project 1 -->
+                <div class="premium-card bg-white rounded-xl overflow-hidden flex flex-col">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center border-b border-slate-100 p-6">
+                        <div class="text-4xl font-black tracking-tighter text-blue-900">
+                            Tally<span class="text-yellow-500 font-sans ml-1 text-4xl">.</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs font-bold text-secondary mb-2 uppercase tracking-wide">Web Development</div>
+                        <h4 class="text-xl font-bold text-darktext mb-3 font-heading">Tally Ki Pathshala</h4>
+                        <p class="text-slate-600 text-sm mb-6 flex-grow">Designed and developed a dedicated digital learning platform focused on Tally education and resources.</p>
+                        <a href="http://tallykipathshala.com/" target="_blank" class="text-primary font-semibold hover:text-secondary transition text-sm flex items-center gap-1">
+                            View Project <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="premium-card bg-white rounded-xl overflow-hidden flex flex-col">
+                    <div class="h-48 bg-primary relative overflow-hidden flex items-center justify-center border-b border-slate-100">
+                        <i class="fas fa-ship text-6xl text-white opacity-50"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs font-bold text-secondary mb-2 uppercase tracking-wide">Corporate Web Design</div>
+                        <h4 class="text-xl font-bold text-darktext mb-3 font-heading">Nidhish Marine</h4>
+                        <p class="text-slate-600 text-sm mb-6 flex-grow">Developed a professional and responsive corporate website tailored for marine shipping services.</p>
+                        <a href="http://nidhishmarine.com/" target="_blank" class="text-primary font-semibold hover:text-secondary transition text-sm flex items-center gap-1">
+                            View Project <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="premium-card bg-white rounded-xl overflow-hidden flex flex-col">
+                    <div class="h-48 bg-slate-800 relative overflow-hidden flex items-center justify-center border-b border-slate-100">
+                        <i class="fas fa-code text-6xl text-slate-400"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs font-bold text-secondary mb-2 uppercase tracking-wide">Custom Automation</div>
+                        <h4 class="text-xl font-bold text-darktext mb-3 font-heading">TDL Customization</h4>
+                        <p class="text-slate-600 text-sm mb-6 flex-grow">Created highly tailored Tally Definition Language (TDL) scripts to automate complex daily workflows and generate specific reports.</p>
+                        <span class="text-slate-400 text-sm font-semibold flex items-center gap-1 mt-auto">
+                            <i class="fas fa-check text-green-500"></i> Delivered
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="locations" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+                <h2 class="text-secondary font-bold tracking-wider uppercase text-xs mb-2">Our Coverage</h2>
+                <h3 class="text-3xl font-extrabold text-darktext font-heading mb-4">Serving Businesses Across Gujarat</h3>
+                <p class="text-slate-600 text-sm">While operating centrally from Radhanpur, R K Solutions actively supports businesses with technology services across all major cities in Gujarat.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 text-center reveal">
+                <!-- Location Architecture links for SEO -->
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Ahmedabad</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Surat</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Vadodara</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Rajkot</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Gandhinagar</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Bhuj</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Gandhidham</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Mehsana</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Patan</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Palanpur</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Morbi</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Jamnagar</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Anand</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Bharuch</div>
+                <div class="p-3 border border-slate-200 rounded bg-white font-medium text-slate-700 text-sm hover:border-primary hover:text-primary transition cursor-pointer">Vapi</div>
+            </div>
+            <p class="text-center text-xs text-slate-400 mt-8"><i class="fas fa-map-marker-alt"></i> Operating from Radhanpur, Patan, Gujarat, India.</p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-primary relative overflow-hidden">
+        <!-- Abstract shape -->
+        <div class="absolute right-0 top-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-20 -mt-20"></div>
+        <div class="absolute left-0 bottom-0 w-64 h-64 bg-white opacity-5 rounded-full -ml-20 -mb-20"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center reveal">
+            <h2 class="text-3xl md:text-5xl font-bold font-heading text-white mb-6">Have a Business Requirement?</h2>
+            <p class="text-lg text-blue-100 mb-10">Tell us what you need and let's discuss the right technology, software, or marketing solution for your business.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-4 rounded bg-white text-primary font-bold shadow-lg hover:bg-slate-100 transition">
+                    Get Free Quote
+                </a>
+                <a href="https://wa.me/919328142199?text=Hello%20R%20K%20Solutions,%20I%20have%20a%20business%20inquiry." target="_blank" class="px-8 py-4 rounded bg-[#25D366] text-white font-bold shadow-lg hover:bg-[#128C7E] transition flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-xl"></i> WhatsApp Us
+                </a>
+                <a href="tel:+919328142199" class="px-8 py-4 rounded border border-white/30 text-white font-bold hover:bg-white/10 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-phone-alt"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Contact Info -->
+                <div class="reveal">
+                    <h2 class="text-secondary font-bold tracking-wider uppercase text-xs mb-2">Get in Touch</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-darktext font-heading mb-6">Let's Discuss Your Project</h3>
+                    <p class="text-slate-600 text-sm mb-10">Fill out the form with your requirement, and we will get back to you shortly for a free consultation and quote.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 p-5 rounded bg-slate-50 border border-slate-100">
+                            <div class="w-10 h-10 rounded bg-blue-50 flex items-center justify-center text-primary shrink-0">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
                             <div>
-                                <p class="text-sm text-slate-500">Call Me Anytime</p>
-                                <a href="tel:+919328142199" class="text-lg font-bold text-slate-800 hover:text-primary transition">+91 9328142199</a>
+                                <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide">Call or WhatsApp</p>
+                                <a href="tel:+919328142199" class="font-bold text-lg text-darktext hover:text-primary transition block mt-1">+91 9328142199</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 bg-slate-50 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">Client Reviews</h2>
-                <h3 class="text-4xl font-extrabold text-slate-900">What They <span class="text-gradient">Say</span></h3>
-            </div>
-
-            <div class="relative max-w-4xl mx-auto reveal">
-                <div id="testimonial-container" class="glass-card rounded-3xl p-10 md:p-14 text-center relative shadow-xl border-white border">
-                    <i class="fas fa-quote-left text-6xl text-primary/10 absolute top-8 left-8"></i>
-                    <p id="testimonial-text" class="text-xl md:text-2xl text-slate-700 italic mb-8 relative z-10 font-light leading-relaxed">
-                        "Dinesh's expertise in Tally customization completely transformed how we manage our inventory and reporting. The automation saved us countless hours!"
-                    </p>
-                    <div>
-                        <h5 id="testimonial-author" class="font-bold text-slate-900 text-lg">Rajesh Patel</h5>
-                        <p id="testimonial-role" class="text-primary text-sm font-medium">Director, Manufacturing Co.</p>
-                    </div>
-                </div>
-                <div class="flex justify-center gap-2 mt-6" id="testimonial-dots">
-                    <div class="w-3 h-3 rounded-full bg-primary cursor-pointer transition-all"></div>
-                    <div class="w-3 h-3 rounded-full bg-slate-300 cursor-pointer transition-all"></div>
-                    <div class="w-3 h-3 rounded-full bg-slate-300 cursor-pointer transition-all"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 relative z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="glass-card rounded-[40px] p-1 shadow-2xl border border-white/60 reveal overflow-hidden relative">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-primary/20 to-accent/20 rounded-bl-full z-0"></div>
-                <div class="grid grid-cols-1 lg:grid-cols-5 bg-white/60 backdrop-blur-xl rounded-[36px] z-10 relative">
-                    
-                    <!-- Contact Info -->
-                    <div class="lg:col-span-2 bg-slate-900 text-white rounded-[36px] p-10 md:p-14 flex flex-col justify-between relative overflow-hidden">
-                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-                        <div class="relative z-10">
-                            <h3 class="text-3xl font-bold mb-2">Let's Discuss Your Business Growth</h3>
-                            <p class="text-slate-400 mb-10 text-sm">Reach out to automate your operations, design a stunning website, or boost your digital sales.</p>
-                            
-                            <div class="space-y-8">
-                                <div class="flex items-start gap-4">
-                                    <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                                        <i class="fas fa-user text-accent"></i>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-slate-400">Consultant</p>
-                                        <p class="font-semibold text-lg">Dinesh Rana</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start gap-4">
-                                    <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                                        <i class="fas fa-phone-alt text-accent"></i>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-slate-400">Mobile Number</p>
-                                        <a href="tel:+919328142199" class="font-semibold text-lg hover:text-accent transition">+91 9328142199</a>
-                                    </div>
-                                </div>
-                                <div class="flex items-start gap-4">
-                                    <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                                        <i class="fas fa-envelope text-accent"></i>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-slate-400">Email Address</p>
-                                        <a href="mailto:dineshrana24718@gmail.com" class="font-semibold text-lg hover:text-accent transition break-all">dineshrana24718@gmail.com</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <div class="lg:col-span-3 p-10 md:p-14 relative">
-                        <h3 class="text-2xl font-bold text-slate-900 mb-8">Send a Message</h3>
                         
-                        <!-- Custom Success Message Box -->
-                        <div id="form-success-msg" class="hidden absolute top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-full shadow-lg font-medium transition-all z-20 flex items-center gap-2">
-                            <i class="fas fa-check-circle"></i> Redirecting to WhatsApp...
+                        <div class="flex items-start gap-4 p-5 rounded bg-slate-50 border border-slate-100">
+                            <div class="w-10 h-10 rounded bg-blue-50 flex items-center justify-center text-primary shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide">Email Address</p>
+                                <a href="mailto:dineshrana24718@gmail.com" class="font-bold text-lg text-darktext hover:text-primary transition block mt-1 break-all">dineshrana24718@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-5 rounded bg-slate-50 border border-slate-100">
+                            <div class="w-10 h-10 rounded bg-blue-50 flex items-center justify-center text-primary shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide">Location</p>
+                                <p class="font-bold text-lg text-darktext mt-1">Radhanpur, Patan, Gujarat, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-white rounded-xl shadow-premium border border-slate-100 p-8 reveal" style="transition-delay: 0.2s;">
+                    <div id="form-success-msg" class="hidden mb-6 bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded text-sm font-medium flex items-center gap-2">
+                        <i class="fas fa-check-circle"></i> Redirecting to WhatsApp securely...
+                    </div>
+
+                    <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
+                                <input type="text" id="req-name" required class="w-full px-4 py-3 rounded border border-slate-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-sm" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Business Name</label>
+                                <input type="text" id="req-business" class="w-full px-4 py-3 rounded border border-slate-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-sm" placeholder="Company Pvt Ltd">
+                            </div>
                         </div>
 
-                        <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label class="block text-sm font-medium text-slate-700 mb-2">Your Name</label>
-                                    <input type="text" id="contact-name" required class="w-full px-4 py-3 rounded-xl bg-white/50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition shadow-sm backdrop-blur-sm" placeholder="John Doe">
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-medium text-slate-700 mb-2">Mobile Number</label>
-                                    <input type="tel" id="contact-mobile" required class="w-full px-4 py-3 rounded-xl bg-white/50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition shadow-sm backdrop-blur-sm" placeholder="+91 XXXXXXXXXX">
-                                </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Mobile Number *</label>
+                                <input type="tel" id="req-mobile" required class="w-full px-4 py-3 rounded border border-slate-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-sm" placeholder="+91 XXXXXXXXXX">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
-                                <input type="email" id="contact-email" required class="w-full px-4 py-3 rounded-xl bg-white/50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition shadow-sm backdrop-blur-sm" placeholder="john@example.com">
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
+                                <input type="email" id="req-email" class="w-full px-4 py-3 rounded border border-slate-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-sm" placeholder="email@example.com">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">City *</label>
+                                <input type="text" id="req-city" required class="w-full px-4 py-3 rounded border border-slate-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-sm" placeholder="e.g. Ahmedabad">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-slate-700 mb-2">Your Message</label>
-                                <textarea rows="4" id="contact-message" required class="w-full px-4 py-3 rounded-xl bg-white/50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition shadow-sm backdrop-blur-sm resize-none" placeholder="Tell me about your project or business needs..."></textarea>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Select Service *</label>
+                                <select id="req-service" required class="w-full px-4 py-3 rounded border border-slate-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-sm bg-white">
+                                    <option value="" disabled selected>Choose a service</option>
+                                    <option value="Website Development">Website Development</option>
+                                    <option value="Custom Software">Custom Software</option>
+                                    <option value="Digital Marketing">Digital Marketing</option>
+                                    <option value="Tally Software">Tally Software</option>
+                                    <option value="Tally Customization">Tally Customization</option>
+                                    <option value="Lead Generation">Lead Generation</option>
+                                    <option value="Other">Other</option>
+                                </select>
                             </div>
-                            <button type="submit" class="w-full py-4 rounded-xl bg-primary text-white font-bold text-lg hover:bg-secondary transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2">
-                                Send Message <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Requirement / Message *</label>
+                            <textarea id="req-message" rows="4" required class="w-full px-4 py-3 rounded border border-slate-300 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-sm resize-none" placeholder="Please describe your requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-4 rounded bg-primary text-white font-bold text-base hover:bg-secondary transition-colors shadow-md">
+                            Get Free Consultation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+            <div class="text-center mb-12">
+                <h2 class="text-secondary font-bold tracking-wider uppercase text-xs mb-2">Common Questions</h2>
+                <h3 class="text-3xl font-extrabold text-darktext font-heading">Frequently Asked Questions</h3>
+            </div>
+            
+            <div class="space-y-3">
+                <div class="bg-white border border-slate-200 rounded">
+                    <button class="w-full text-left px-6 py-4 font-bold text-darktext flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        What services does R K Solutions offer?
+                        <i class="fas fa-plus text-slate-400 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 text-sm text-slate-600 bg-white">
+                        <div class="pb-4">We specialize in Website Design & Development, Custom Software solutions, Tally Accounting Software (setup and support), Tally Customization (TDL), Digital Marketing, and Lead Generation for businesses.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded">
+                    <button class="w-full text-left px-6 py-4 font-bold text-darktext flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        Do you provide services outside of Radhanpur?
+                        <i class="fas fa-plus text-slate-400 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 text-sm text-slate-600 bg-white">
+                        <div class="pb-4">Yes, absolutely. While based in Radhanpur, we support clients across all major cities in Gujarat, including Ahmedabad, Surat, Vadodara, and Rajkot via remote collaboration.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded">
+                    <button class="w-full text-left px-6 py-4 font-bold text-darktext flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        How much does a new website cost?
+                        <i class="fas fa-plus text-slate-400 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 text-sm text-slate-600 bg-white">
+                        <div class="pb-4">Website costs depend on your requirements (standard business site vs. e-commerce platform). We provide a free consultation to understand your needs and offer a transparent quote.</div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded">
+                    <button class="w-full text-left px-6 py-4 font-bold text-darktext flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        Can you customize Tally for our specific business needs?
+                        <i class="fas fa-plus text-slate-400 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 text-sm text-slate-600 bg-white">
+                        <div class="pb-4">Yes. Using TDL (Tally Definition Language), we customize Tally to generate specific business reports, alter invoice formats, and automate repetitive tasks.</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-slate-200 rounded">
+                    <button class="w-full text-left px-6 py-4 font-bold text-darktext flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        How long does development take?
+                        <i class="fas fa-plus text-slate-400 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 text-sm text-slate-600 bg-white">
+                        <div class="pb-4">Standard business websites take 1-3 weeks. Custom software and comprehensive marketing strategies depend on the project scale. We provide clear timelines during planning.</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <footer class="bg-primary text-slate-300 py-16 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 border-b border-slate-800 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 border-b border-blue-800 pb-12">
+                
+                <!-- Column 1 -->
                 <div>
-                    <span class="font-bold text-2xl text-white tracking-tight mb-4 block">Dinesh<span class="text-primary">.</span></span>
-                    <p class="text-sm">Tally Expert | Website Designer | Digital Marketing Consultant</p>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded bg-white flex items-center justify-center text-primary font-bold text-sm">
+                            RK
+                        </div>
+                        <span class="font-bold text-xl text-white tracking-tight font-heading">R K Solutions</span>
+                    </div>
+                    <p class="text-sm leading-relaxed mb-6 text-blue-100">
+                        Professional IT and Business Solutions company providing robust technology, software, accounting, and marketing services across Gujarat.
+                    </p>
                 </div>
+
+                <!-- Column 2 -->
                 <div>
-                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#services" class="hover:text-primary transition">Services</a></li>
-                        <li><a href="#expertise" class="hover:text-primary transition">Expertise</a></li>
-                        <li><a href="#portfolio" class="hover:text-primary transition">Portfolio</a></li>
-                        <li><a href="#about" class="hover:text-primary transition">About</a></li>
+                    <h4 class="text-white font-bold mb-4 uppercase tracking-wide text-sm">Services</h4>
+                    <ul class="space-y-2 text-sm text-blue-100">
+                        <li><a href="#services" class="hover:text-white transition-colors">Website Development</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Custom Software</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Digital Marketing</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Tally Solutions</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Tally Customization</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Lead Generation</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 3 -->
                 <div>
-                    <h4 class="text-white font-semibold mb-4">Contact Info</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><i class="fas fa-phone-alt mr-2 text-primary"></i> +91 9328142199</li>
-                        <li><i class="fas fa-envelope mr-2 text-primary"></i> dineshrana24718@gmail.com</li>
+                    <h4 class="text-white font-bold mb-4 uppercase tracking-wide text-sm">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-blue-100">
+                        <li><a href="#" onclick="window.scrollTo(0,0)" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#solutions" class="hover:text-white transition-colors">Solutions</a></li>
+                        <li><a href="#locations" class="hover:text-white transition-colors">Locations</a></li>
+                        <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase tracking-wide text-sm">Contact</h4>
+                    <ul class="space-y-3 text-sm text-blue-100">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-phone-alt mt-1"></i>
+                            <a href="tel:+919328142199" class="hover:text-white transition">+91 9328142199</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <a href="mailto:dineshrana24718@gmail.com" class="hover:text-white transition break-all">dineshrana24718@gmail.com</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Radhanpur, Patan, Gujarat, India</span>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="text-center text-sm flex flex-col md:flex-row justify-between items-center">
-                <p>Copyright © 2026 Dinesh Rana. All Rights Reserved.</p>
-                <div class="mt-4 md:mt-0 flex gap-4">
-                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition">Terms of Service</a>
-                </div>
+            
+            <div class="text-center text-sm text-blue-200">
+                <p>&copy; 2026 R K Solutions. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- CV Download Modal -->
-    <div id="cv-modal" class="fixed inset-0 z-[100] hidden items-center justify-center opacity-0 transition-opacity duration-300">
-        <!-- Backdrop -->
-        <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-md" onclick="closeCvModal()"></div>
-        
-        <!-- Modal Content -->
-        <div class="glass-card relative z-10 w-[90%] max-w-md rounded-[32px] p-8 text-center shadow-2xl transform scale-95 opacity-0 transition-all duration-300 border border-white" id="cv-modal-content">
-            <button onclick="closeCvModal()" class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-red-100 hover:text-red-500 transition-colors">
-                <i class="fas fa-times"></i>
-            </button>
-            
-            <div class="w-24 h-24 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner border border-white">
-                <i class="fas fa-file-pdf text-5xl text-primary drop-shadow-md"></i>
-            </div>
-            
-            <h3 class="text-2xl font-bold text-slate-900 mb-2">Download Resume</h3>
-            <p class="text-slate-600 mb-8 text-sm leading-relaxed">Get my detailed profile, expertise in Tally, Digital Marketing, and project experience in PDF format.</p>
-            
-            <button type="button" onclick="downloadResume()" class="w-full py-4 px-6 rounded-2xl bg-primary text-white font-bold text-lg hover:bg-secondary transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-3">
-                <span id="download-btn-text"><i class="fas fa-cloud-download-alt"></i> Download Now</span>
-            </button>
-        </div>
-    </div>
-
-    <!-- INVISIBLE HTML RESUME TEMPLATE (Used for generating PDF) -->
-    <div id="resume-template-wrapper">
-        <div id="resume-template" class="pdf-resume">
-            <div class="pdf-header">
-                <h1 class="pdf-title">DINESH RANA</h1>
-                <h2 class="pdf-subtitle">Business Automation & Technology Consultant</h2>
-                <div class="pdf-contact">
-                    <strong>Phone:</strong> +91 9328142199 &nbsp; | &nbsp; 
-                    <strong>Email:</strong> dineshrana24718@gmail.com
-                </div>
-            </div>
-            
-            <h3 class="pdf-section-title">Professional Summary</h3>
-            <p class="pdf-text">
-                A technology-driven business consultant with deep expertise in Tally Accounting, Tally Customization, Website Design, Digital Marketing, Lead Generation, Sales, and Business Automation. Dedicated to helping businesses improve efficiency, generate inbound leads, and achieve sustainable growth by implementing robust digital solutions and automated workflows.
-            </p>
-
-            <h3 class="pdf-section-title">Core Expertise & Skills</h3>
-            <div class="pdf-skills-grid">
-                <div>
-                    <ul style="margin:0; padding-left:20px; color:#475569;">
-                        <li><strong>Tally Accounting:</strong> GST Handling, Inventory Tracking, MIS Reports</li>
-                        <li><strong>Tally Customization (TDL):</strong> Workflow Automation, Custom Invoices</li>
-                        <li><strong>Website Design:</strong> Corporate Sites, High-Converting Landing Pages</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul style="margin:0; padding-left:20px; color:#475569;">
-                        <li><strong>Lead Generation:</strong> Google/FB Ads, WhatsApp Marketing, Sales Funnels</li>
-                        <li><strong>Digital Marketing:</strong> SEO, Organic Growth, Social Media Management</li>
-                        <li><strong>Data & Sales Ops:</strong> Excel to Tally Import, CRM Integration</li>
-                    </ul>
-                </div>
-            </div>
-
-            <h3 class="pdf-section-title">Key Projects & Experience</h3>
-            
-            <div class="pdf-project">
-                <h4>Tally Ki Pathshala (tallykipathshala.com) <span>[ Web Development & Education ]</span></h4>
-                <p class="pdf-text" style="margin-top:2px;">Designed and developed a dedicated digital learning platform focused on Tally education. Implemented SEO-friendly architecture and user-friendly interface.</p>
-            </div>
-
-            <div class="pdf-project">
-                <h4>Nidhish Marine (nidhishmarine.com) <span>[ Corporate Web Design ]</span></h4>
-                <p class="pdf-text" style="margin-top:2px;">Developed a professional and highly responsive corporate website tailored for marine services, enhancing their digital presence and client trust.</p>
-            </div>
-
-            <div class="pdf-project">
-                <h4>Advanced TDL Customization <span>[ Automation ]</span></h4>
-                <p class="pdf-text" style="margin-top:2px;">Created customized Tally Definition Language (TDL) scripts to automate complex daily workflows, enabling specialized business reporting and seamless invoice modifications.</p>
-            </div>
-
-            <div class="pdf-project">
-                <h4>End-to-End Tally Management <span>[ Finance ]</span></h4>
-                <p class="pdf-text" style="margin-top:2px;">Successfully managed comprehensive accounting structures, error-free GST returns, inventory management, and strategic MIS reporting for multiple clients.</p>
-            </div>
-            
-            <div class="pdf-project">
-                <h4>Strategic Business Growth Campaigns <span>[ Lead Gen ]</span></h4>
-                <p class="pdf-text" style="margin-top:2px;">Drove extensive business expansion through targeted lead generation campaigns, resulting in significantly increased inbound queries and optimized sales funnels.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- JavaScript Interactions & Three.js Logic -->
     <script>
-        // --- REAL PDF GENERATOR LOGIC ---
-        function downloadResume() {
-            // Show loading animation on button
-            const btnText = document.getElementById('download-btn-text');
-            const originalText = btnText.innerHTML;
-            btnText.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating PDF...';
-
-            // Select the hidden resume template
-            const element = document.getElementById('resume-template');
-            
-            // Configure PDF generation settings
-            const opt = {
-                margin:       10,
-                filename:     'Dinesh_Rana_Resume.pdf',
-                image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { 
-                    scale: 2, 
-                    useCORS: true,
-                    scrollY: 0, // CRITICAL FIX: Removes the white space issue caused by scrolling down
-                    windowWidth: 800
-                },
-                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-
-            // Generate, save, and reset
-            html2pdf().set(opt).from(element).save().then(() => {
-                btnText.innerHTML = originalText;
-                closeCvModal();
-            }).catch(err => {
-                console.error("PDF Generation Error: ", err);
-                btnText.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error. Try Again.';
-                setTimeout(() => { btnText.innerHTML = originalText; }, 3000);
-            });
-        }
-
-        // --- CV Modal Logic ---
-        function openCvModal() {
-            const modal = document.getElementById('cv-modal');
-            const content = document.getElementById('cv-modal-content');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                modal.classList.add('opacity-100');
-                content.classList.remove('scale-95', 'opacity-0');
-                content.classList.add('scale-100', 'opacity-100');
-            }, 10);
-        }
-
-        function closeCvModal() {
-            const modal = document.getElementById('cv-modal');
-            const content = document.getElementById('cv-modal-content');
-            
-            modal.classList.remove('opacity-100');
-            modal.classList.add('opacity-0');
-            content.classList.remove('scale-100', 'opacity-100');
-            content.classList.add('scale-95', 'opacity-0');
-            
-            setTimeout(() => {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-            }, 300); // Wait for transition
-        }
-
         document.addEventListener('DOMContentLoaded', () => {
-            
             // --- Mobile Menu Toggle ---
             const btn = document.getElementById('mobile-menu-btn');
             const menu = document.getElementById('mobile-menu');
             const menuIcon = btn.querySelector('i');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
 
-            btn.addEventListener('click', () => {
+            function toggleMenu() {
                 menu.classList.toggle('hidden');
-                
-                // Change Icon logic
-                if(menu.classList.contains('hidden')) {
+                if (menu.classList.contains('hidden')) {
                     menuIcon.classList.remove('fa-times');
                     menuIcon.classList.add('fa-bars');
                 } else {
                     menuIcon.classList.remove('fa-bars');
                     menuIcon.classList.add('fa-times');
                 }
-            });
+            }
+
+            btn.addEventListener('click', toggleMenu);
             
-            menu.addEventListener('click', () => {
-                menu.classList.add('hidden');
-                menuIcon.classList.remove('fa-times');
-                menuIcon.classList.add('fa-bars');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                });
             });
 
-            // --- Sticky Navbar effect ---
+            // --- Sticky Navbar ---
             const navbar = document.getElementById('navbar');
             window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
+                if (window.scrollY > 10) {
                     navbar.classList.add('shadow-md');
-                    navbar.style.background = 'rgba(255, 255, 255, 0.95)';
                 } else {
                     navbar.classList.remove('shadow-md');
-                    navbar.style.background = 'rgba(255, 255, 255, 0.85)';
                 }
             });
-
-            // --- Typing Effect ---
-            const titles = [
-                "Tally Expert", 
-                "Business Automation Specialist",
-                "Website Designer", 
-                "Digital Marketing Consultant", 
-                "Lead Generation Specialist"
-            ];
-            let titleIndex = 0;
-            let charIndex = 0;
-            let isDeleting = false;
-            const typedTextElement = document.getElementById("typed-text");
-
-            function typeEffect() {
-                const currentTitle = titles[titleIndex];
-                
-                if (isDeleting) {
-                    typedTextElement.textContent = currentTitle.substring(0, charIndex - 1);
-                    charIndex--;
-                } else {
-                    typedTextElement.textContent = currentTitle.substring(0, charIndex + 1);
-                    charIndex++;
-                }
-
-                let typeSpeed = isDeleting ? 50 : 100;
-
-                if (!isDeleting && charIndex === currentTitle.length) {
-                    typeSpeed = 2000;
-                    isDeleting = true;
-                } else if (isDeleting && charIndex === 0) {
-                    isDeleting = false;
-                    titleIndex = (titleIndex + 1) % titles.length;
-                    typeSpeed = 500;
-                }
-
-                setTimeout(typeEffect, typeSpeed);
-            }
-            setTimeout(typeEffect, 1000); 
 
             // --- Scroll Reveal Animation ---
             const reveals = document.querySelectorAll('.reveal');
             const revealOptions = {
-                threshold: 0.15,
+                threshold: 0.1,
                 rootMargin: "0px 0px -50px 0px"
             };
-
             const revealOnScroll = new IntersectionObserver(function(entries, observer) {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -1024,96 +921,50 @@
                     }
                 });
             }, revealOptions);
-
             reveals.forEach(reveal => {
                 revealOnScroll.observe(reveal);
             });
-
-            // --- Portfolio Slider Controls ---
-            const slider = document.getElementById('slider');
-            const slideLeftBtn = document.getElementById('slideLeft');
-            const slideRightBtn = document.getElementById('slideRight');
-
-            if(slideLeftBtn && slideRightBtn && slider) {
-                slideLeftBtn.addEventListener('click', () => {
-                    slider.scrollBy({ left: -400, behavior: 'smooth' });
-                });
-                slideRightBtn.addEventListener('click', () => {
-                    slider.scrollBy({ left: 400, behavior: 'smooth' });
-                });
-            }
-
-            // --- Testimonial Auto-Slide Logic ---
-            const testimonials = [
-                {
-                    text: "\"Dinesh's expertise in Tally customization completely transformed how we manage our inventory and reporting. The automation saved us countless hours!\"",
-                    name: "Rajesh Patel",
-                    role: "Director, Manufacturing Co."
-                },
-                {
-                    text: "\"The website design and lead generation campaign exceeded our expectations. Our inbound leads increased by 150% within the first two months.\"",
-                    name: "Sunita Sharma",
-                    role: "Founder, Retail Brand"
-                },
-                {
-                    text: "\"A true professional who understands both technology and business operations. His CRM integration streamlined our entire sales process.\"",
-                    name: "Amit Desai",
-                    role: "Sales Head, Tech Solutions"
-                }
-            ];
-            
-            let tIndex = 0;
-            const tText = document.getElementById('testimonial-text');
-            const tAuthor = document.getElementById('testimonial-author');
-            const tRole = document.getElementById('testimonial-role');
-            const tDots = document.getElementById('testimonial-dots').children;
-
-            function updateTestimonial(index) {
-                tText.style.opacity = 0;
-                setTimeout(() => {
-                    tText.textContent = testimonials[index].text;
-                    tAuthor.textContent = testimonials[index].name;
-                    tRole.textContent = testimonials[index].role;
-                    
-                    Array.from(tDots).forEach((dot, i) => {
-                        if(i === index) {
-                            dot.classList.remove('bg-slate-300');
-                            dot.classList.add('bg-primary', 'w-6');
-                        } else {
-                            dot.classList.remove('bg-primary', 'w-6');
-                            dot.classList.add('bg-slate-300');
-                        }
-                    });
-                    tText.style.opacity = 1;
-                }, 300);
-            }
-
-            setInterval(() => {
-                tIndex = (tIndex + 1) % testimonials.length;
-                updateTestimonial(tIndex);
-            }, 5000);
-
-            Array.from(tDots).forEach((dot, i) => {
-                dot.addEventListener('click', () => {
-                    tIndex = i;
-                    updateTestimonial(tIndex);
-                });
-            });
-            updateTestimonial(0);
-
-            // --- Three.js Background Animation ---
-            initThreeJS();
         });
 
-        // --- Contact Form Handle ---
+        // --- FAQ Accordion Function ---
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            // Close all others
+            const allContents = document.querySelectorAll('.faq-content');
+            const allIcons = document.querySelectorAll('.faq-content').forEach(c => {
+                if(c !== content && c.style.maxHeight) {
+                    c.style.maxHeight = null;
+                    c.previousElementSibling.querySelector('i').classList.remove('fa-minus');
+                    c.previousElementSibling.querySelector('i').classList.add('fa-plus');
+                }
+            });
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+            }
+        }
+
+        // --- Contact Form Submission (WhatsApp Integration) ---
         function handleContactSubmit(event) {
             event.preventDefault();
-            const name = document.getElementById('contact-name').value;
-            const mobile = document.getElementById('contact-mobile').value;
-            const email = document.getElementById('contact-email').value;
-            const message = document.getElementById('contact-message').value;
+            
+            const name = document.getElementById('req-name').value;
+            const business = document.getElementById('req-business').value || 'Not provided';
+            const mobile = document.getElementById('req-mobile').value;
+            const email = document.getElementById('req-email').value || 'Not provided';
+            const city = document.getElementById('req-city').value;
+            const service = document.getElementById('req-service').value;
+            const message = document.getElementById('req-message').value;
 
-            const rawText = `*New Inquiry from Portfolio Website*\n\n*Name:* ${name}\n*Mobile:* ${mobile}\n*Email:* ${email}\n*Message:* ${message}`;
+            const rawText = `*New Business Inquiry (R K Solutions)*\n\n*Name:* ${name}\n*Business:* ${business}\n*Mobile:* ${mobile}\n*Email:* ${email}\n*City:* ${city}\n*Service Required:* ${service}\n\n*Requirement:* ${message}`;
             const encodedText = encodeURIComponent(rawText);
             
             const whatsappNumber = "919328142199";
@@ -1122,108 +973,14 @@
             const msgBox = document.getElementById('form-success-msg');
             msgBox.classList.remove('hidden');
             
+            // Redirect to WhatsApp
             window.open(whatsappURL, '_blank');
 
+            // Reset form after short delay
             setTimeout(() => {
                 msgBox.classList.add('hidden');
                 document.getElementById('contact-form').reset();
             }, 3000);
-        }
-
-        function initThreeJS() {
-            const canvas = document.getElementById('hero-canvas');
-            if(!canvas) return;
-
-            const scene = new THREE.Scene();
-            scene.background = null; 
-
-            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-            const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            renderer.setPixelRatio(window.devicePixelRatio);
-
-            const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
-            scene.add(ambientLight);
-            const directionalLight = new THREE.DirectionalLight(0xffffff, 0.6);
-            directionalLight.position.set(10, 20, 10);
-            scene.add(directionalLight);
-            const pointLight = new THREE.PointLight(0x2563eb, 1, 100);
-            pointLight.position.set(-10, 10, 10);
-            scene.add(pointLight);
-
-            const shapes = [];
-            const geometries = [
-                new THREE.IcosahedronGeometry(1.5, 0),
-                new THREE.TorusGeometry(1, 0.4, 16, 100),
-                new THREE.OctahedronGeometry(1.2, 0),
-                new THREE.SphereGeometry(1, 32, 32)
-            ];
-
-            const materials = [
-                new THREE.MeshBasicMaterial({ color: 0x4f46e5, wireframe: true, transparent: true, opacity: 0.15 }),
-                new THREE.MeshStandardMaterial({ color: 0x06b6d4, roughness: 0.2, metalness: 0.8, transparent: true, opacity: 0.2 })
-            ];
-
-            for (let i = 0; i < 15; i++) {
-                const mesh = new THREE.Mesh(
-                    geometries[Math.floor(Math.random() * geometries.length)], 
-                    materials[Math.floor(Math.random() * materials.length)]
-                );
-                mesh.position.set((Math.random() - 0.5) * 30, (Math.random() - 0.5) * 20, (Math.random() - 0.5) * 15 - 5);
-                mesh.rotation.set(Math.random() * Math.PI, Math.random() * Math.PI, 0);
-                const scale = Math.random() * 0.8 + 0.4;
-                mesh.scale.set(scale, scale, scale);
-
-                mesh.userData = {
-                    rotSpeedX: (Math.random() - 0.5) * 0.01,
-                    rotSpeedY: (Math.random() - 0.5) * 0.01,
-                    initialY: mesh.position.y,
-                    offset: Math.random() * Math.PI * 2
-                };
-                scene.add(mesh);
-                shapes.push(mesh);
-            }
-
-            const particlesGeometry = new THREE.BufferGeometry();
-            const posArray = new Float32Array(300 * 3);
-            for(let i = 0; i < 900; i++) posArray[i] = (Math.random() - 0.5) * 40;
-            particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-            const particlesMesh = new THREE.Points(particlesGeometry, new THREE.PointsMaterial({ size: 0.05, color: 0x2563eb, transparent: true, opacity: 0.4 }));
-            scene.add(particlesMesh);
-
-            camera.position.z = 8;
-            let mouseX = 0, mouseY = 0;
-            document.addEventListener('mousemove', (e) => {
-                mouseX = (e.clientX - window.innerWidth / 2);
-                mouseY = (e.clientY - window.innerHeight / 2);
-            });
-
-            const clock = new THREE.Clock();
-            function animate() {
-                requestAnimationFrame(animate);
-                const time = clock.getElapsedTime();
-
-                camera.position.x += (mouseX * 0.001 - camera.position.x) * 0.05;
-                camera.position.y += (-mouseY * 0.001 - camera.position.y) * 0.05;
-                camera.lookAt(scene.position);
-
-                shapes.forEach(shape => {
-                    shape.rotation.x += shape.userData.rotSpeedX;
-                    shape.rotation.y += shape.userData.rotSpeedY;
-                    shape.position.y = shape.userData.initialY + Math.sin(time * 0.5 + shape.userData.offset) * 1.5;
-                });
-                particlesMesh.rotation.y = time * 0.05;
-                particlesMesh.rotation.x = time * 0.02;
-
-                renderer.render(scene, camera);
-            }
-
-            window.addEventListener('resize', () => {
-                camera.aspect = window.innerWidth / window.innerHeight;
-                camera.updateProjectionMatrix();
-                renderer.setSize(window.innerWidth, window.innerHeight);
-            });
-            animate();
         }
     </script>
 </body>
